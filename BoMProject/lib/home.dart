@@ -1,19 +1,29 @@
+import 'package:BoMProject/books/alma.dart';
+import 'package:BoMProject/books/enos.dart';
+import 'package:BoMProject/books/ether.dart';
+import 'package:BoMProject/books/first_nephi.dart';
+import 'package:BoMProject/books/fourth_nephi.dart';
+import 'package:BoMProject/books/helaman.dart';
+import 'package:BoMProject/books/jacob.dart';
+import 'package:BoMProject/books/jarom.dart';
+import 'package:BoMProject/books/mormon.dart';
+import 'package:BoMProject/books/moroni.dart';
+import 'package:BoMProject/books/mosiah.dart';
+import 'package:BoMProject/books/omni.dart';
+import 'package:BoMProject/books/second_nephi.dart';
+import 'package:BoMProject/books/third_nephi.dart';
+import 'package:BoMProject/books/words_of_mormon.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  Home({Key key}) : super(key: key);
-
-  @override
-  HomeState createState() => HomeState();
-}
-
-class HomeState extends State<Home> {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final nav = Navigator.of(context);
 
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+      ),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -26,7 +36,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => FirstNephi(),
                         ),
                       );
                     },
@@ -48,7 +58,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => SecondNephi(),
                         ),
                       );
                     },
@@ -70,7 +80,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Jacob(),
                         ),
                       );
                     },
@@ -97,7 +107,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Enos(),
                         ),
                       );
                     },
@@ -119,7 +129,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Jarom(),
                         ),
                       );
                     },
@@ -141,7 +151,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Omni(),
                         ),
                       );
                     },
@@ -168,7 +178,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => WordsOfMormon(),
                         ),
                       );
                     },
@@ -190,7 +200,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Mosiah(),
                         ),
                       );
                     },
@@ -212,7 +222,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Alma(),
                         ),
                       );
                     },
@@ -239,7 +249,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Helaman(),
                         ),
                       );
                     },
@@ -261,7 +271,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => ThirdNephi(),
                         ),
                       );
                     },
@@ -283,7 +293,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => FourthNephi(),
                         ),
                       );
                     },
@@ -310,7 +320,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Mormon(),
                         ),
                       );
                     },
@@ -332,7 +342,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Ether(),
                         ),
                       );
                     },
@@ -354,7 +364,7 @@ class HomeState extends State<Home> {
                     onTap: () {
                       nav.push(
                         MaterialPageRoute(
-                          builder: (context) => Home(),
+                          builder: (context) => Moroni(),
                         ),
                       );
                     },
