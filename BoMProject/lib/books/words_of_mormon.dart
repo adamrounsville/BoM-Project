@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class WordsOfMormon extends StatelessWidget {
   const WordsOfMormon({Key key}) : super(key: key);
@@ -8,7 +9,11 @@ class WordsOfMormon extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: SafeArea(
-        child: Center(),
+        child: Center(
+          child: SfPdfViewer.network(
+            'https://www.churchofjesuschrist.org/bc/content/shared/content/english/pdf/language-materials/35666_eng.pdf',
+          ),
+        ),
       ),
     );
   }

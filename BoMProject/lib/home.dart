@@ -44,7 +44,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('1 Nephi'),
+                      child: Text(
+                        '1 Nephi',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -66,7 +69,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('2 Nephi'),
+                      child: Text(
+                        '2 Nephi',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -88,7 +94,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Jacob'),
+                      child: Text(
+                        'Jacob',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -115,7 +124,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Enos'),
+                      child: Text(
+                        'Enos',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -137,7 +149,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Jarom'),
+                      child: Text(
+                        'Jarom',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -159,7 +174,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Omni'),
+                      child: Text(
+                        'Omni',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -186,7 +204,11 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Words of\nMormon'),
+                      child: Text(
+                        'Words of\nMormon',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -208,7 +230,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Mosiah'),
+                      child: Text(
+                        'Mosiah',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -230,7 +255,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Alma'),
+                      child: Text(
+                        'Alma',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -257,7 +285,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Helaman'),
+                      child: Text(
+                        'Helaman',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -279,7 +310,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('3 Nephi'),
+                      child: Text(
+                        '3 Nephi',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -301,7 +335,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('4 Nephi'),
+                      child: Text(
+                        '4 Nephi',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -328,7 +365,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Mormon'),
+                      child: Text(
+                        'Mormon',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -350,7 +390,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Ether'),
+                      child: Text(
+                        'Ether',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(
@@ -372,7 +415,10 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 110,
                       alignment: Alignment.center,
-                      child: Text('Moroni'),
+                      child: Text(
+                        'Moroni',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.all(

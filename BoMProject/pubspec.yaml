@@ -11,6 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
+  syncfusion_flutter_pdfviewer: ^18.4.49-beta
+
 
 dev_dependencies:
   flutter_test:
