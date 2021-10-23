@@ -1,5 +1,6 @@
+import 'package:BoMProject/features/book_of_mormon_stories.dart';
+import 'package:BoMProject/widgets/themed_button.dart';
 import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class Moroni extends StatelessWidget {
   const Moroni({Key key}) : super(key: key);
@@ -7,11 +8,19 @@ class Moroni extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Moroni'),
+      ),
       body: SafeArea(
         child: Center(
-          child: SfPdfViewer.network(
-            'https://www.churchofjesuschrist.org/bc/content/shared/content/english/pdf/language-materials/35666_eng.pdf',
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ThemedButton(
+                buttonLable: 'Stories',
+                pushedPage: BookOfMormonStories(title: 'Moroni'),
+              ),
+            ],
           ),
         ),
       ),

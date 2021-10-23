@@ -22,6 +22,7 @@ class Home extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        title: Text('The Interactive Book of Mormon'),
         automaticallyImplyLeading: false,
       ),
       body: SafeArea(
