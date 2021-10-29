@@ -7,22 +7,38 @@ class Alma extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final mq = MediaQuery.of(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Alma'),
       ),
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+      body: Stack(
+        children: <Widget>[
+          Container(
+            width: mq.size.width,
+            height: mq.size.height,
+            child: Image.asset(
+              'assets/images/book_of_mormon.jpeg',
+              fit: BoxFit.cover,
+            ),
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              SizedBox(height: mq.size.height * 0.55),
               ThemedButton(
-                buttonLable: 'Stories',
+                buttonLabel: 'Stories',
+                pushedPage: BookOfMormonStories(title: 'Alma'),
+              ),
+              SizedBox(height: 16),
+              ThemedButton(
+                buttonLabel: 'Pictures',
                 pushedPage: BookOfMormonStories(title: 'Alma'),
               ),
             ],
           ),
-        ),
+        ],
       ),
     );
   }

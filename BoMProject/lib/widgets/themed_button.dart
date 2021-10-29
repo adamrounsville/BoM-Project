@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 class ThemedButton extends StatelessWidget {
   const ThemedButton({
     Key key,
-    this.buttonLable,
+    this.buttonLabel,
     this.pushedPage,
+    this.textScaleFactor = 1.0,
   }) : super(key: key);
 
-  final String buttonLable;
+  final String buttonLabel;
   final dynamic pushedPage;
+  final double textScaleFactor;
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +29,9 @@ class ThemedButton extends StatelessWidget {
         width: 110,
         alignment: Alignment.center,
         child: Text(
-          buttonLable,
+          buttonLabel,
           style: TextStyle(fontWeight: FontWeight.bold),
+          textScaleFactor: textScaleFactor,
         ),
         decoration: BoxDecoration(
           color: Colors.amber,
