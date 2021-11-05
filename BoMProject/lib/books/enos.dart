@@ -1,4 +1,5 @@
 import 'package:BoMProject/features/book_of_mormon_stories.dart';
+import 'package:BoMProject/features/pictures.dart';
 import 'package:BoMProject/widgets/themed_button.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +38,10 @@ class Enos extends StatelessWidget {
                 SizedBox(height: 16),
                 ThemedButton(
                   buttonLabel: 'Pictures',
-                  pushedPage: BookOfMormonStories(title: 'Enos'),
+                  pushedPage: Pictures(
+                    title: 'Enos',
+                    imageOne: 'assets/images/enos_praying.jpeg',
+                  ),
                   textScaleFactor: 1.5,
                 ),
               ],

@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:BoMProject/features/book_of_mormon_stories.dart';
+import 'package:BoMProject/features/pictures.dart';
 import 'package:BoMProject/widgets/themed_button.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +40,10 @@ class ThirdNephi extends StatelessWidget {
                 SizedBox(height: 16),
                 ThemedButton(
                   buttonLabel: 'Pictures',
-                  pushedPage: BookOfMormonStories(title: '3 Nephi'),
+                  pushedPage: Pictures(
+                    title: '3 Nephi',
+                    imageOne: 'assets/images/christ_appears_to_nephites.jpeg',
+                  ),
                   textScaleFactor: 1.5,
                 ),
               ],

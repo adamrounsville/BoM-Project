@@ -1,4 +1,5 @@
 import 'package:BoMProject/features/book_of_mormon_stories.dart';
+import 'package:BoMProject/features/pictures.dart';
 import 'package:BoMProject/widgets/themed_button.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +38,12 @@ class Mosiah extends StatelessWidget {
                 SizedBox(height: 16),
                 ThemedButton(
                   buttonLabel: 'Pictures',
-                  pushedPage: BookOfMormonStories(title: 'Mosiah'),
+                  pushedPage: Pictures(
+                    title: 'Mosiah',
+                    imageOne: 'assets/images/abinadi_before_king_noah.jpeg',
+                    imageTwo:
+                        'assets/images/king_benjamin_addresses_people.jpeg',
+                  ),
                   textScaleFactor: 1.5,
                 ),
               ],

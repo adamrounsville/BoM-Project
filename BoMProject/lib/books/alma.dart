@@ -1,4 +1,5 @@
 import 'package:BoMProject/features/book_of_mormon_stories.dart';
+import 'package:BoMProject/features/pictures.dart';
 import 'package:BoMProject/widgets/themed_button.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +35,14 @@ class Alma extends StatelessWidget {
               SizedBox(height: 16),
               ThemedButton(
                 buttonLabel: 'Pictures',
-                pushedPage: BookOfMormonStories(title: 'Alma'),
+                pushedPage: Pictures(
+                  title: 'Alma',
+                  imageOne: 'assets/images/alma_baptizing_people.jpeg',
+                  imageTwo: 'assets/images/ammon_defending_kings_sheep.jpeg',
+                  imageThree: 'assets/images/title_of_liberty.jpeg',
+                  imageFour:
+                      'assets/images/two_thousand_stripling_warriors.jpeg',
+                ),
               ),
             ],
           ),

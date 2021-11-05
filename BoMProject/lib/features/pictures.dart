@@ -13,14 +13,16 @@ class Pictures extends StatelessWidget {
   }) : super(key: key);
 
   final String title;
-  final Image imageOne;
-  final Image imageTwo;
-  final Image imageThree;
-  final Image imageFour;
-  final Image imageFive;
+  final String imageOne;
+  final String imageTwo;
+  final String imageThree;
+  final String imageFour;
+  final String imageFive;
 
   @override
   Widget build(BuildContext context) {
+    final mq = MediaQuery.of(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -29,11 +31,54 @@ class Pictures extends StatelessWidget {
         child: Center(
           child: ListView(
             children: [
-              imageOne,
-              imageTwo,
-              imageThree,
-              imageFour,
-              imageFive,
+              Container(
+                width: mq.size.width,
+                height: mq.size.height,
+                child: Image.asset(
+                  imageOne,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              imageTwo != null
+                  ? Container(
+                      width: mq.size.width,
+                      height: mq.size.height,
+                      child: Image.asset(
+                        imageTwo,
+                        fit: BoxFit.cover,
+                      ),
+                    )
+                  : Container(),
+              imageThree != null
+                  ? Container(
+                      width: mq.size.width,
+                      height: mq.size.height,
+                      child: Image.asset(
+                        imageThree,
+                        fit: BoxFit.cover,
+                      ),
+                    )
+                  : Container(),
+              imageFour != null
+                  ? Container(
+                      width: mq.size.width,
+                      height: mq.size.height,
+                      child: Image.asset(
+                        imageFour,
+                        fit: BoxFit.cover,
+                      ),
+                    )
+                  : Container(),
+              imageFive != null
+                  ? Container(
+                      width: mq.size.width,
+                      height: mq.size.height,
+                      child: Image.asset(
+                        imageFive,
+                        fit: BoxFit.cover,
+                      ),
+                    )
+                  : Container(),
             ],
           ),
         ),

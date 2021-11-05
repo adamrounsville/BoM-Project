@@ -1,4 +1,5 @@
 import 'package:BoMProject/features/book_of_mormon_stories.dart';
+import 'package:BoMProject/features/pictures.dart';
 import 'package:BoMProject/widgets/themed_button.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +38,13 @@ class FirstNephi extends StatelessWidget {
                 SizedBox(height: 16),
                 ThemedButton(
                   buttonLabel: 'Pictures',
-                  pushedPage: BookOfMormonStories(title: '1 Nephi'),
+                  pushedPage: Pictures(
+                    title: '1 Nephi',
+                    imageOne: 'assets/images/lehi_and_liahona.jpeg',
+                    imageTwo: 'assets/images/lehis_dream',
+                    imageThree: 'assets/images/nephi_subdues_brothers.jpeg',
+                    imageFour: 'assets/images/promised_lang.jpeg',
+                  ),
                   textScaleFactor: 1.5,
                 ),
               ],
