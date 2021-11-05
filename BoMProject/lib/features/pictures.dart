@@ -31,6 +31,7 @@ class Pictures extends StatelessWidget {
         child: Center(
           child: ListView(
             children: [
+              SizedBox(height: 16),
               Container(
                 width: mq.size.width,
                 height: mq.size.height,
@@ -39,6 +40,7 @@ class Pictures extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
+              SizedBox(height: 16),
               imageTwo != null
                   ? Container(
                       width: mq.size.width,
@@ -49,6 +51,7 @@ class Pictures extends StatelessWidget {
                       ),
                     )
                   : Container(),
+              SizedBox(height: 16),
               imageThree != null
                   ? Container(
                       width: mq.size.width,
@@ -59,6 +62,7 @@ class Pictures extends StatelessWidget {
                       ),
                     )
                   : Container(),
+              SizedBox(height: 16),
               imageFour != null
                   ? Container(
                       width: mq.size.width,
@@ -69,6 +73,7 @@ class Pictures extends StatelessWidget {
                       ),
                     )
                   : Container(),
+              SizedBox(height: 16),
               imageFive != null
                   ? Container(
                       width: mq.size.width,

@@ -40,8 +40,7 @@ class Mosiah extends StatelessWidget {
                   buttonLabel: 'Pictures',
                   pushedPage: Pictures(
                     title: 'Mosiah',
-                    imageOne: 'assets/images/abinadi_before_king_noah.jpeg',
-                    imageTwo:
+                    imageOne:
                         'assets/images/king_benjamin_addresses_people.jpeg',
                   ),
                   textScaleFactor: 1.5,

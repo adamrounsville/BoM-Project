@@ -41,9 +41,9 @@ class FirstNephi extends StatelessWidget {
                   pushedPage: Pictures(
                     title: '1 Nephi',
                     imageOne: 'assets/images/lehi_and_liahona.jpeg',
-                    imageTwo: 'assets/images/lehis_dream',
+                    imageTwo: 'assets/images/lehis_dream.jpeg',
                     imageThree: 'assets/images/nephi_subdues_brothers.jpeg',
-                    imageFour: 'assets/images/promised_lang.jpeg',
+                    imageFour: 'assets/images/promised_land.jpeg',
                   ),
                   textScaleFactor: 1.5,
                 ),
