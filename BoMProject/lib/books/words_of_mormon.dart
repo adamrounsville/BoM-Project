@@ -38,7 +38,10 @@ class WordsOfMormon extends StatelessWidget {
                 SizedBox(height: 16),
                 ThemedButton(
                   buttonLabel: 'Pictures',
-                  pushedPage: Pictures(title: 'Words of Mormon'),
+                  pushedPage: Pictures(
+                    title: 'Words of Mormon',
+                    imageOne: 'assets/images/mormon_abridging_plates.jpeg',
+                  ),
                   textScaleFactor: 1.5,
                 ),
               ],

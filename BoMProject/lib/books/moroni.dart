@@ -38,7 +38,10 @@ class Moroni extends StatelessWidget {
                 SizedBox(height: 16),
                 ThemedButton(
                   buttonLabel: 'Pictures',
-                  pushedPage: Pictures(title: 'Moroni'),
+                  pushedPage: Pictures(
+                    title: 'Moroni',
+                    imageOne: 'assets/images/moroni_buries_plates.jpeg',
+                  ),
                   textScaleFactor: 1.5,
                 ),
               ],

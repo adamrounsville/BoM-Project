@@ -40,6 +40,7 @@ class Ether extends StatelessWidget {
                   buttonLabel: 'Pictures',
                   pushedPage: Pictures(
                     title: 'Ether',
+                    imageOne: 'assets/images/jaredite_barges.jpeg',
                   ),
                   textScaleFactor: 1.5,
                 ),

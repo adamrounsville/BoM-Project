@@ -38,7 +38,10 @@ class Mormon extends StatelessWidget {
                 SizedBox(height: 16),
                 ThemedButton(
                   buttonLabel: 'Pictures',
-                  pushedPage: Pictures(title: 'Mormon'),
+                  pushedPage: Pictures(
+                    title: 'Mormon',
+                    imageOne: 'assets/images/mormon_bids_farewell.jpeg',
+                  ),
                   textScaleFactor: 1.5,
                 ),
               ],

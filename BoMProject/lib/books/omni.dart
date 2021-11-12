@@ -1,5 +1,4 @@
 import 'package:BoMProject/features/book_of_mormon_stories.dart';
-import 'package:BoMProject/features/pictures.dart';
 import 'package:BoMProject/widgets/themed_button.dart';
 import 'package:flutter/material.dart';
 
@@ -33,12 +32,6 @@ class Omni extends StatelessWidget {
                 ThemedButton(
                   buttonLabel: 'Stories',
                   pushedPage: BookOfMormonStories(title: 'Omni'),
-                  textScaleFactor: 1.5,
-                ),
-                SizedBox(height: 16),
-                ThemedButton(
-                  buttonLabel: 'Pictures',
-                  pushedPage: Pictures(title: 'Omni'),
                   textScaleFactor: 1.5,
                 ),
               ],
