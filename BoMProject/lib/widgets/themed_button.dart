@@ -15,6 +15,7 @@ class ThemedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final nav = Navigator.of(context);
+    final mq = MediaQuery.of(context);
 
     return InkWell(
       onTap: () {
@@ -25,8 +26,8 @@ class ThemedButton extends StatelessWidget {
         );
       },
       child: Container(
-        height: 80,
-        width: 110,
+        height: mq.size.height * 0.1,
+        width: mq.size.width * 0.05,
         alignment: Alignment.center,
         child: Text(
           buttonLabel,

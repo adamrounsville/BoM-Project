@@ -24,27 +24,32 @@ class Alma extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              SizedBox(height: mq.size.height * 0.55),
-              ThemedButton(
-                buttonLabel: 'Stories',
-                pushedPage: BookOfMormonStories(title: 'Alma'),
-              ),
-              SizedBox(height: 16),
-              ThemedButton(
-                buttonLabel: 'Pictures',
-                pushedPage: Pictures(
-                  title: 'Alma',
-                  imageOne: 'assets/images/alma_baptizing_people.jpeg',
-                  imageTwo: 'assets/images/ammon_defending_kings_sheep.jpeg',
-                  imageThree: 'assets/images/title_of_liberty.jpeg',
-                  imageFour:
-                      'assets/images/two_thousand_stripling_warriors.jpeg',
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                SizedBox(height: mq.size.height * 0.55),
+                ThemedButton(
+                  buttonLabel: 'Stories',
+                  pushedPage: BookOfMormonStories(title: 'Alma'),
+                  textScaleFactor: 1.5,
                 ),
-              ),
-            ],
+                SizedBox(height: 16),
+                ThemedButton(
+                  buttonLabel: 'Pictures',
+                  textScaleFactor: 1.5,
+                  pushedPage: Pictures(
+                    title: 'Alma',
+                    imageOne: 'assets/images/alma_baptizing_people.jpeg',
+                    imageTwo: 'assets/images/ammon_defending_kings_sheep.jpeg',
+                    imageThree: 'assets/images/title_of_liberty.jpeg',
+                    imageFour:
+                        'assets/images/two_thousand_stripling_warriors.jpeg',
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
